@@ -1,0 +1,6 @@
+libs
+.vscode
+__pycache__
+.venv
+.env
+topics.db
