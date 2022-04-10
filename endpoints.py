@@ -8,6 +8,7 @@ from Ukrainian import Ukrainian_Plagiat
 import sqlite3
 import os
 import uvicorn
+import nltk
 
 app = FastAPI()
 
@@ -28,7 +29,7 @@ app.add_middleware(
 
 @app.on_event("startup")
 async def startup_event():
-    word = lemmatizer_eng.lemmatize("warmup")
+    nltk.download('all')
     exists = os.path.exists('./topics.db')
 
     if not exists:
