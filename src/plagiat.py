@@ -26,7 +26,7 @@ class Anti_Plagiat():
     ukrainian_stemmer = UkStemmer()
     tf_idf_vectorizer = TfidfVectorizer()
 
-    elastic_api_url = "http://localhost:9200"
+    elastic_api_url = "http://elasticsearch:9200"
 
     def __init__(self, text1, text2, topic, language):
         self.raw_text1, self.raw_text2 = text1, text2
