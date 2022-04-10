@@ -29,11 +29,9 @@ class Anti_Plagiat():
     elastic_api_url = "http://localhost:9200"
 
     def __init__(self, text1, text2, topic, language):
-        # check elastic work
-        res = requests.get(self.elastic_api_url + '/').json()
         self.raw_text1, self.raw_text2 = text1, text2
-        self.language = language
-        self.topic = topic
+        self.language = language.lower()
+        self.topic = topic.lower()
 
     def make_contractions(self, text):
         return text

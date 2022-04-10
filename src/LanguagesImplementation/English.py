@@ -1,5 +1,5 @@
 import contractions
-from plagiat import Anti_Plagiat
+from src.plagiat import Anti_Plagiat
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 import nltk

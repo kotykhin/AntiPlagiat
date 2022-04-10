@@ -1,6 +1,5 @@
 altgraph==0.17
 asgiref==3.3.4
-autopep8==1.5.4
 cachetools==4.2.0
 certifi==2021.5.30
 chardet==4.0.0
@@ -37,7 +36,6 @@ threadpoolctl==2.1.0
 toml==0.10.2
 tqdm==4.56.0
 typing-extensions==3.10.0.0
-uk-stemmer==1.0
 Unidecode==1.1.2
 urllib3==1.26.5
 uvicorn==0.14.0

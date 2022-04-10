@@ -1,4 +1,4 @@
-from plagiat import Anti_Plagiat
+from src.plagiat import Anti_Plagiat
 from nltk.corpus import stopwords
 
 
