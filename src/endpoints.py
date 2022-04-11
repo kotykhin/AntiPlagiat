@@ -25,7 +25,7 @@ async def startup_event():
 @app.get("/topics/{lang}")
 async def root(lang: str):
     language_check(lang)
-    topics_arr = get_topics()
+    topics_arr = get_topics(lang)
     return {"message": topics_arr}
 
 
