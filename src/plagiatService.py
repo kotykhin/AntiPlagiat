@@ -64,9 +64,9 @@ def generate_checker(
 def get_message(koef):
     if koef < 35:
         return """These texts have very little similarity coefficient, so it is just accidental similarities."""
-    if 35 < koef < 50:
+    if 35 <= koef < 50:
         return """Program can't define plagiat surely, but it seems to be not plagiated text, maybe only some parts of text have similarities."""
-    if 35 < koef < 50:
+    if 50 < koef <= 65:
         return """Program can't define plagiat surely, but it seems to be plagiated text, maybe major parts of text have similarities or full text have been plagiated."""
     if koef > 65:
         return """These texts have very big similarity coefficient, so it is plagiated texts."""
