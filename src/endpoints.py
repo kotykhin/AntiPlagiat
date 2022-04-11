@@ -39,7 +39,7 @@ class RequestBody(BaseModel):
 @app.post("/check")
 async def create_item(item: RequestBody):
     language_check(item.language)
-    checker = generate_checker(item)
+    checker = generate_checker(item.language, item.text1, item.text2, item.topic)
     koef, timer = checker.run()
     sim = float(koef * 100)
     mes = get_message(sim)
